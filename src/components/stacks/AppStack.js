@@ -11,10 +11,10 @@ const Tab = createMaterialTopTabNavigator();
 
 const AppStack = () => (
     <NavigationContainer>
-        <Tab.Navigator initialRouteName="Search">
-            <Tab.Screen name="Search" component={SearchScreen}
+        <Tab.Navigator initialRouteName="Movies">
+            <Tab.Screen name="Movies" component={MoviesScreen}
             options={{
-                title: "Search Results", 
+                title: "Movies", 
                 headerStyle: {
                     backgroundColor: '#000'
                 }, 
@@ -23,15 +23,13 @@ const AppStack = () => (
                 }
             }} /> 
 
-            <Tab.Screen name="Movies" component={MoviesScreen}/>
+            <Tab.Screen name="Search" component={SearchScreen}/>
 
             <Tab.Screen name="TVShows" component={TVShowsScreen} />
 
             <Tab.Screen name ='Details' component={ShowScreen} 
-            
-
+        
              />
-
 
         </Tab.Navigator>
 

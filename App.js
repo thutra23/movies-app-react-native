@@ -9,8 +9,6 @@ const App = () => {
     <NativeBaseProvider>
       <Header />
       <AppStack />
-      <StatusBar style='light'/>
-      <MoviesContainer />
     </NativeBaseProvider>
   ); 
 }

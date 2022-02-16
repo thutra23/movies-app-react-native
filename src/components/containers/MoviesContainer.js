@@ -7,6 +7,8 @@ import MoviesList from '../lists/MoviesList';
 
 const MoviesContainer = ({navigation}) => {
 
+    const [movieFilter, setMovieFilter] = useState();
+
     const [isLoading, setIsLoading] = useState(false);
     const [movies, setMovies] = useState([]);
     const [moviesData, setMoviesData] = useState(null);
@@ -36,9 +38,6 @@ const MoviesContainer = ({navigation}) => {
             alert("Error", `Something went wrong! ${error}`)
         }
     )
-
-   
-
     // const handleInputChange = moviesData => {
     //     console.log('movies data', moviesData);
     //     setMoviesData(moviesData);
