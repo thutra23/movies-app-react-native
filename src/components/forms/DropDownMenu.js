@@ -8,9 +8,11 @@ const DropDownMenu = () => {
     return (
         <Center>
             <Select selectedValue={movieFilter}
-            _selectedItem={
+            // _selectedItem={
                 
-            }>
+            // }
+            
+            >
 
             </Select>
 
